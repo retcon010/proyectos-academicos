@@ -1,0 +1,30 @@
+# Entorno local
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Datos sensibles
+.env
+.env.*
+secrets/
+*.key
+
+# Salidas de compilación
+build/
+dist/
+out/
+*.log
