@@ -4,7 +4,7 @@ Repositorio con los proyectos y ejercicios del ciclo de Desarrollo de Aplicacion
 
 ## 🚀 Proyectos Desplegados
 
-- **Trabajo SQL / Web:** [Ver sitio web desplegado](https://retcon010.github.io/proyectos-academicos/projects/minu_massengo1_trabajoSQL/)
+- **Trabajo SQL / Web:** [Ver sitio web desplegado](https://retcon010.github.io/proyectos-academicos/)
 
 ---
 
