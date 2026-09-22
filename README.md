@@ -1,6 +1,6 @@
 # Repositorio de Proyectos Académicos
 
-Este repositorio sirve como base para organizar, versionar y publicar tus proyectos académicos en GitHub.
+Este repositorio es público y sirve como base para organizar, versionar y compartir tus proyectos académicos en GitHub de forma abierta.
 
 ## Estructura
 
@@ -59,6 +59,8 @@ git push -u origin main
 
 ## Recomendación final
 
+Como el repositorio es público, conviene mantener una estructura clara y una documentación bien redactada para que otros puedan entender, reutilizar o consultar tus trabajos.
+
 Usa nombres descriptivos como:
 
 - `analisis-de-datos-2026`
@@ -66,4 +68,4 @@ Usa nombres descriptivos como:
 - `simulacion-estadistica`
 - `tfg-visualizacion-datos`
 
-Esto facilita buscar, ordenar y presentar tus trabajos en GitHub.
+Esto facilita buscar, ordenar y presentar tus trabajos en GitHub de forma profesional.
