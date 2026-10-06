@@ -10,15 +10,20 @@ Este sitio presenta una marca con estilo moderno y una estructura de navegación
 - Galería
 - Contacto
 
-Incluye Bootstrap para el diseño responsive y Leaflet para el mapa de ubicación.
+Incluye Bootstrap y Bootstrap Icons para el diseño responsive y Leaflet para el mapa de ubicación.
 
 ## Estructura
 
-- `index.html` — página principal
-- `galeria.html` — galería de proyectos
-- `contacto.html` — formulario de contacto y mapa
-- `css/main.css` — estilos del sitio
+- `index.html` — página principal en la raíz
+- `views/galeria.html` — galería de proyectos
+- `views/contacto.html` — formulario de contacto y mapa
+- `css/styles.css` — importa Bootstrap y Bootstrap Icons; no contiene estilos propios
 - `js/main.js` — validación del formulario y mapa
+- `assets/images/` — imágenes del sitio
+- `assets/fonts/` — fuentes locales
+- `assets/icons/` — iconos locales
+
+Las fotografías de la web se guardan en `assets/images/`. La navegación móvil, las cuadrículas responsive y el layout del pie se construyen con utilidades Bootstrap.
 
 ## Despliegue con GitHub Pages
 

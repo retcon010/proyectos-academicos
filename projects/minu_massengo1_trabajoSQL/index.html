@@ -1,98 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- Esto es la cabecera del documento, aquí van los metadatos y los enlaces a CSS -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MasterD | Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
-    <!-- Barra de navegación principal del sitio -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+  <body class="min-vh-100 d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
-        <a class="navbar-brand" href="index.html">MasterD</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú de navegación">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <a class="navbar-brand ms-auto ms-lg-0" href="index.html">MasterD</a>
         <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto gap-lg-3">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <ul class="navbar-nav ms-lg-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="views/galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="views/contacto.html">Contacto</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <main class="container py-5">
-      <!-- Banner grande de la portada, aquí va la imagen principal -->
-      <section class="hero-banner rounded-4 overflow-hidden shadow-sm mb-5">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80" class="img-fluid w-100" alt="Paisaje natural" style="height: 420px; object-fit: cover;" />
-      </section>
+    <main class="container flex-grow-1 py-4 py-lg-5">
+      <div class="col-lg-8 mx-auto mb-4 mb-lg-5 d-none d-md-block">
+        <div class="ratio ratio-21x9">
+          <img src="assets/images/photo-1500530855697-b586d89ba3ee.jpg" class="img-fluid rounded shadow object-fit-cover" alt="Paisaje natural con montañas y cielo abierto">
+        </div>
+      </div>
 
-      <!-- Sección de texto introductorio -->
-      <section class="mb-5">
-        <h1 class="section-title text-center mb-4">Sobre nosotros</h1>
-        <p class="lead text-secondary mx-auto" style="max-width: 900px;">
-          Creamos experiencias digitales con una identidad clara, visual moderna y enfoque en la atención a cada proyecto.
-          Nuestro trabajo combina estrategia, diseño y desarrollo para ofrecer soluciones funcionales y memorables.
+      <section class="text-center mb-4 mb-lg-5">
+        <h1 class="display-4 mb-2">Sobre nosotros</h1>
+        <p class="lead text-secondary mx-auto col-lg-9">
+          Creamos experiencias digitales con una identidad clara, visual moderna y enfoque en la atención a cada proyecto. Nuestro trabajo combina estrategia, diseño y desarrollo para ofrecer soluciones funcionales y memorables.
         </p>
       </section>
 
-      <!-- Grid con tarjetas de contenido principal -->
-      <section class="row g-4">
-        <div class="col-md-6 col-xl-3">
-          <article class="card h-100 shadow-sm border-0">
-            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Proyecto 1" />
-            <div class="card-body">
-              <h5 class="card-title">Diseño estratégico</h5>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-10 col-md-6 col-lg-3">
+          <article class="card h-100 text-center">
+            <img src="assets/images/photo-1497366754035-f200968a6e72.jpg" class="card-img-top img-fluid object-fit-cover" alt="Espacio de trabajo para un proyecto de diseño">
+            <div class="card-body d-flex flex-column">
+              <h2 class="h5 card-title">Diseño estratégico</h2>
               <p class="card-text text-secondary">Planificamos la presencia digital de marcas con una propuesta visual fuerte y coherente.</p>
+              <a class="btn btn-primary mt-auto align-self-center" href="views/galeria.html">Ver proyectos</a>
             </div>
           </article>
         </div>
-        <div class="col-md-6 col-xl-3">
-          <article class="card h-100 shadow-sm border-0">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Proyecto 2" />
-            <div class="card-body">
-              <h5 class="card-title">Experiencia UI</h5>
+        <div class="col-12 col-sm-10 col-md-6 col-lg-3">
+          <article class="card h-100 text-center">
+            <img src="assets/images/photo-1516321318423-f06f85e504b3.jpg" class="card-img-top img-fluid object-fit-cover" alt="Equipo trabajando en una interfaz digital">
+            <div class="card-body d-flex flex-column">
+              <h2 class="h5 card-title">Experiencia UI</h2>
               <p class="card-text text-secondary">Diseñamos interfaces limpias, amigables y orientadas a la conversión y la claridad.</p>
+              <a class="btn btn-primary mt-auto align-self-center" href="views/galeria.html">Ver proyectos</a>
             </div>
           </article>
         </div>
-        <div class="col-md-6 col-xl-3">
-          <article class="card h-100 shadow-sm border-0">
-            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Proyecto 3" />
-            <div class="card-body">
-              <h5 class="card-title">Desarrollo web</h5>
+        <div class="col-12 col-sm-10 col-md-6 col-lg-3">
+          <article class="card h-100 text-center">
+            <img src="assets/images/photo-1501785888041-af3ef285b470.jpg" class="card-img-top img-fluid object-fit-cover" alt="Paisaje que inspira un proyecto creativo">
+            <div class="card-body d-flex flex-column">
+              <h2 class="h5 card-title">Desarrollo web</h2>
               <p class="card-text text-secondary">Construimos sitios modernos, rápidos y adaptados a todos los dispositivos.</p>
+              <a class="btn btn-primary mt-auto align-self-center" href="views/galeria.html">Ver proyectos</a>
             </div>
           </article>
         </div>
-        <div class="col-md-6 col-xl-3">
-          <article class="card h-100 shadow-sm border-0">
-            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80" alt="Proyecto 4" />
-            <div class="card-body">
-              <h5 class="card-title">Soporte continuo</h5>
+        <div class="col-12 col-sm-10 col-md-6 col-lg-3">
+          <article class="card h-100 text-center">
+            <img src="assets/images/photo-1516549655169-df83a0774514.jpg" class="card-img-top img-fluid object-fit-cover" alt="Equipo colaborando en el soporte de un proyecto">
+            <div class="card-body d-flex flex-column">
+              <h2 class="h5 card-title">Soporte continuo</h2>
               <p class="card-text text-secondary">Acompañamos a nuestros clientes para mantener soluciones vigentes y eficaces.</p>
+              <a class="btn btn-primary mt-auto align-self-center" href="views/contacto.html">Contactar</a>
             </div>
           </article>
         </div>
-      </section>
+      </div>
     </main>
 
-    <!-- Footer del sitio con enlaces útiles -->
-    <footer class="footer py-4 mt-5">
-      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-        <div>
-          <h5 class="mb-1">MasterD</h5>
-          <p class="mb-0 text-light-emphasis">Diseño y desarrollo para marcas que quieren crecer.</p>
-        </div>
-        <div class="d-flex gap-3">
-          <a href="index.html" class="text-light text-decoration-none">Inicio</a>
-          <a href="galeria.html" class="text-light text-decoration-none">Galería</a>
-          <a href="contacto.html" class="text-light text-decoration-none">Contacto</a>
+    <footer class="bg-primary text-white py-4 mt-auto">
+      <div class="container">
+        <div class="row g-4">
+          <section class="col-12 col-md-4">
+            <h2 class="h5">MasterD</h2>
+            <p class="mb-0">Diseño y desarrollo para marcas que quieren crecer.</p>
+          </section>
+          <nav class="col-12 col-md-4" aria-label="Enlaces del pie de página">
+            <h2 class="h5">Enlaces</h2>
+            <ul class="list-unstyled mb-0">
+              <li><a href="index.html" class="link-light">Inicio</a></li>
+              <li><a href="views/galeria.html" class="link-light">Portafolio</a></li>
+              <li><a href="views/contacto.html" class="link-light">Contacto</a></li>
+            </ul>
+          </nav>
+          <section class="col-12 col-md-4" aria-label="Redes sociales">
+            <h2 class="h5">Síguenos</h2>
+            <div class="d-flex gap-3 fs-4">
+              <a class="link-light" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook, sitio oficial"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+              <a class="link-light" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram, sitio oficial"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+              <a class="link-light" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn, sitio oficial"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            </div>
+          </section>
         </div>
       </div>
     </footer>
